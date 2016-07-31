@@ -15,13 +15,11 @@ bool checkString(const string& user) {
 	{
 		return false;
 	}
-
 	//creating a boolean array of size 256
 	//setting all values to false (0)
 	bool check[256] = {false};
 	//can also use
 	//	bool check[256] = {0};
-
 	
 	//loop until end of string 
 	for (int i = 0; i < user.length(); i++)
@@ -30,13 +28,11 @@ bool checkString(const string& user) {
 		//int: returns ASCII code of character 
 		//char: would return character value
 		int value = user.at(i); 
-
 			//if this value = true, it has already been found, return false 
 			if (check[value] == true)
 			{
 				return false; 
 			}
-
 			else 
 			{
 				//if not found yet, set this value to true 
@@ -46,9 +42,7 @@ bool checkString(const string& user) {
 	return true;
 }//ends bool
 
-
 int main() {
-
 	string user;
 	cout << "Please enter in a string: ";
 	cin  >> user;
