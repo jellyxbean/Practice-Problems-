@@ -22,7 +22,7 @@ bool isRotation(string strOne, string strTwo)
 		//new string to hold value of stringOne twice
 		string newString = strOne + strOne;
 		//If target is not found, return string::npos
-
+	
 		//call isSubstring(newString, str2)
 		return newString.find(strTwo) != string::npos; 
 	}
@@ -30,13 +30,13 @@ bool isRotation(string strOne, string strTwo)
 }
 
 int main() {
-  string strOne;
-  string strTwo;
-  
-  cout << "Please enter in a string: "; 
-  cin >> strOne; 
-  cout << "Please enter in another string: ";
-  cin >> strTwo; 
-  
-  cout << isRotation(strOne, strTwo) << endl;
+	string strOne;
+	string strTwo;
+	
+	cout << "Please enter in a string: "; 
+	cin >> strOne; 
+	cout << "Please enter in another string: ";
+	cin >> strTwo; 
+	
+	cout << isRotation(strOne, strTwo) << endl;
 }
