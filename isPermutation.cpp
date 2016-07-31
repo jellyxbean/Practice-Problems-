@@ -29,6 +29,6 @@ int main() {
 	cin >> two;
 
 	cout << anagram(one, two) <<endl;
-
+	
 	return 0;
 }
